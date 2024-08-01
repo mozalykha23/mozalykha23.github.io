@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fcfcfc;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    background-color: #191919;
+    border-bottom: 1px solid red;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.image {
+    width: 50%;
+    height: 86%;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    transform: rotateY(130deg);
+}
+
+.image img {
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    transform: translateX(20%);
+    border-radius: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h4 {
+    color: #fcfcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 65px;
+    margin: 20px 0;
+}
+
+.content a {
+    font-size: 20px;
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    transition: background 0.5s, border-color 0.5s;
+}
+
+.content a:hover {
+    background: transparent;
+    border-color: red;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+}
+
+.about-me {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me img {
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 1px solid red;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 27px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: background 0.5s, border-color 0.5s;
+}
+
+.button:hover {
+    background-color: transparent;
+    border-color: red;
+    cursor: pointer;
+}
+
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gambar {
+    width: 20px;
+    height: 25px;
+}
+.image img.bordered {
+    /* border: 5px solid rgb(255, 255, 255); */
+    width: 100%;
+    height: 100%;
+}
+
+.service {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: var(--link-color);
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background: var(--nav-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.card h3 {
+    color: var(--link-color);
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: var(--text-color);
+    font-size: 16px;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: var(--link-color);
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #101010;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: var(--link-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--text-color);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.bar-container {
+    background: var(--bar-background);
+    border-radius: 10px;
+    height: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.bar {
+    background: var(--bar-color);
+    border-radius: 10px;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+    background-color: #101010       ;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.title h2 {
+    color: var(--link-color);
+    font-size: 75px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-info h3 {
+    color: var(--link-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li i {
+    color: var(--link-color);
+    margin-right: 10px;
+}
+
+.contact-info ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-form h3 {
+    color: var(--link-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: var(--text-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    background: var(--input-background);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: background 0.5s, border-color 0.5s;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    border-color: red;
+    cursor: pointer;
+}
